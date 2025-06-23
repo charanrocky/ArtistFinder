@@ -2,9 +2,9 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import axios from "axios";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
+import { Input } from "../components/ui/input";
+import { Button } from "../components/ui/button";
+import { Textarea } from "../components/ui/textarea";
 
 const schema = z.object({
   name: z.string().min(2),

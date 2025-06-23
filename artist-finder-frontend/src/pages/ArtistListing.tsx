@@ -1,8 +1,8 @@
 // src/pages/ArtistListing.tsx
 import { useEffect, useState } from "react";
 import axios from "axios";
-import ArtistCard from "@/components/ArtistCard";
-import FilterBlock from "@/components/FilterBlock";
+import ArtistCard from "../components/ArtistCard";
+import FilterBlock from "../components/FilterBlock";
 
 export default function ArtistListing() {
   const [artists, setArtists] = useState([]);

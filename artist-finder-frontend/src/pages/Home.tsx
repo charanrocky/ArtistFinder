@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import CategoryCard from "@/components/CategoryCard";
+import { Button } from "../components/ui/button";
+import CategoryCard from "../components/CategoryCard";
 import { Link } from "react-router-dom";
 
 const categories = ["Singers", "Dancers", "Speakers", "DJs"];
