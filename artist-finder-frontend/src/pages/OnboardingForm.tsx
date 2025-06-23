@@ -15,11 +15,7 @@ const schema = z.object({
 });
 
 export default function OnboardingForm() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm({ resolver: zodResolver(schema) });
+  const { register, handleSubmit } = useForm({ resolver: zodResolver(schema) });
 
   const onSubmit = (data: any) => {
     axios.post("http://localhost:5000/api/artists", data).then(() => {
